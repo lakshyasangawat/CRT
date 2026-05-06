@@ -147,3 +147,45 @@ int main() {
     
 //     return 0;
 // }
+
+
+// 💎 PROBLEM 06: POINTER BASICS 📍
+// 📝 Task: Understanding addresses and dereferencing
+// 🖼️ Logic:
+// [ age (24) ] <--- ptr points here (&age)
+// ==============================================
+
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int age = 24;
+//     int *ptr = &age;
+//     cout << "Value: " << age << "\nAddress: " << ptr << "\nValue via Ptr: " << *ptr << "\n";
+//     *ptr = 28; // Modification via pointer
+//     cout << "Updated Value: " << *ptr;
+// }
+
+// ==============================================
+// 💎 PROBLEM 07: POINTER ARITHMETIC ➕
+// 📝 Task: Addition of 2 numbers using pointers
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    
+    // Storing addresses in pointer variables
+    int *ptr1 = &a;
+    int *ptr2 = &b;
+    
+    // Dereferencing pointers to get values and calculate sum
+    int sum = *ptr1 + *ptr2;
+    
+    cout << "Sum using Pointers: " << sum << endl;
+    
+    return 0;
+}
+
