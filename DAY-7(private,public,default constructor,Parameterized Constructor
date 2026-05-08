@@ -137,3 +137,33 @@ int main() {
 // features to the users
 // abstract class -- class cannot be initialized and it is formed using the abstract keyword
 // absract method -- there is no initialization of the abstract method
+
+
+PROBLEM 04: ABSTRACTION 🌫️
+// 📝 Task: Hiding implementation, showing only essentials
+// ==============================================
+
+/* 
+ * Abstract Class: A blueprint that cannot be instantiated.
+ * Abstract Method: A method declared without an implementation (Pure Virtual).
+ */
+
+int main() {
+    cout << "--- Access Specifier Demo ---\n";
+    child obj1;
+    obj1.accessOfSecretCode();
+
+    cout << "\n--- Constructor Demo ---\n";
+    wifiConnection wifi;
+    wifi.showDetails();
+    
+    Student std1("Abhishek", 101); // Abhishek Aggarwal, Age 24
+    std1.displayDetails();
+
+    cout << "\n--- Encapsulation Demo ---\n";
+    bankAccount myAcc;
+    myAcc.setBalance(6000);
+    cout << "Verified Balance: " << myAcc.getbalance() << "\n";
+
+    return 0;
+}
